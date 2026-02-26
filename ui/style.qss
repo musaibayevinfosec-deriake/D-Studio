@@ -1,0 +1,104 @@
+/* ===== App base ===== */
+QMainWindow, QWidget {
+    background: #0f1115;
+    color: #e8e8e8;
+    font-family: "Segoe UI";
+    font-size: 12px;
+}
+
+QLabel {
+    color: #e8e8e8;
+}
+
+/* ===== Sidebar ===== */
+QFrame#Sidebar {
+    background: rgba(20, 22, 28, 0.70); /* glass */
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 14px;
+}
+
+/* Sidebar buttons (nav items) */
+QToolButton#NavButton {
+    background: transparent;
+    border: 0px;
+    border-radius: 10px;
+    padding: 10px 12px;
+    text-align: left;
+    color: #d7d7d7;
+}
+
+QToolButton#NavButton:hover {
+    background: rgba(46, 204, 113, 0.10); /* hover */
+}
+
+QToolButton#NavButton:checked {
+    background: rgba(46, 204, 113, 0.18);
+    color: #2ecc71;
+}
+
+/* Collapse toggle */
+QToolButton#CollapseButton {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 10px;
+    padding: 8px;
+}
+QToolButton#CollapseButton:hover {
+    background: rgba(255,255,255,0.08);
+}
+
+/* ===== Glass cards ===== */
+QFrame#Card {
+    background: rgba(30, 33, 40, 0.62);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 16px;
+}
+
+/* KPI text */
+QLabel#kpiTitle {
+    color: rgba(255,255,255,0.55);
+    font-size: 13px;
+}
+QLabel#kpiValue {
+    color: #2ecc71;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+/* Buttons */
+QPushButton {
+    background: #2ecc71;
+    color: #09100b;
+    border: 0px;
+    border-radius: 10px;
+    padding: 10px 14px;
+    font-weight: 600;
+}
+QPushButton:hover { background: #36f085; }
+QPushButton:pressed { background: #22b35f; }
+
+/* Inputs */
+QComboBox, QLineEdit {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 10px;
+    padding: 8px 10px;
+    color: #e8e8e8;
+}
+QComboBox:hover, QLineEdit:hover {
+    border: 1px solid rgba(46,204,113,0.35);
+}
+
+/* Table */
+QTableView {
+    background: rgba(255,255,255,0.03);
+    border: 1px solid rgba(255,255,255,0.06);
+    border-radius: 14px;
+    gridline-color: rgba(255,255,255,0.05);
+}
+QHeaderView::section {
+    background: rgba(255,255,255,0.04);
+    color: rgba(255,255,255,0.7);
+    border: 0px;
+    padding: 8px;
+}
